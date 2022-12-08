@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javelin HTML Email Templates</title>
+    <!-- Link to boostrap css styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- Link to the css style sheet -->
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+  </head>
+  <body style="margin: auto">
+    <!-- Navigation to switch between templates -->
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Verification Email</a>
+      <a class="nav-link" href="welcome-one.html">Welcome Email</a>
+      <a class="nav-link" href="welcome-two.html">2nd Welcome Email</a>
+      <a class="nav-link" href="first-book.html">First booking Email</a>
+      <a class="nav-link" href="book-confirm.html">Booking Confrimed Email</a>
+    </nav>
+    <!-- Template One -->
+    <div
+      class="body-container"
+      style="
+        text-align: center;
+        margin: auto;
+        margin-bottom: 50px;
+        background-color: white;
+        width: 600px;
+        padding: 10px 10px;
+      "
+    >
+      <!-- Email Name -->
+      <h4 class="page-name">Booking Confirmed Email</h4>
+      <!-- Email Content -->
+      <img
+        src="data:image/png;base64,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"
+      />
+      <h1>Your booking has been confirmed!</h1>
+      <hr />
+      <p>
+        A receipt has been emailed to you, if you did not receive it please
+        contact support at <a href="">${facilityData.email}</a>.
+      </p>
+      <p>Click the button below to view the game on Javelin.</p>
+      <br />
+      <button
+        style="
+          background-color: #053661;
+          color: white;
+          border-radius: 4px;
+          border-style: none;
+          padding: 10px 30px;
+          transition: all 0.3s;
+          margin-bottom: 50px;
+        "
+      >
+        View Booking Details in Javelin
+      </button>
+      <div
+        style="
+          box-shadow: rgba(14, 14, 14, 0.123) 0px 2px 8px 0px;
+          border: 1px solid #053661;
+          border-radius: 20px;
+        "
+      >
+        <div
+          style="
+            background-color: white;
+            padding: 20px 10px;
+            border-radius: 20px 20px 0px 0px;
+          "
+        >
+          <h4>Game Details</h4>
+        </div>
+        <div
+          style="
+            background-color: #edfaff;
+            padding: 20px 20px;
+            border-radius: 0px 0px 20px 20px;
+          "
+        >
+          <br />
+          <p><b>Game Name:</b> ${game.name}</p>
+          <br />
+          <p><b>Date and Time:</b> ${game.date} at ${game.start.time}</p>
+          <br />
+          <p><b>Location:</b> ${facility.name}, ${facility.address}</p>
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

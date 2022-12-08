@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javelin HTML Email Templates</title>
+    <!-- Link to boostrap css styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- Link to the css style sheet -->
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+  </head>
+  <body style="margin: auto">
+    <!-- Navigation to switch between templates -->
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Verification Email</a>
+      <a class="nav-link" href="welcome-one.html">Welcome Email</a>
+      <a class="nav-link" href="welcome-two.html">2nd Welcome Email</a>
+      <a class="nav-link" href="first-book.html">First booking Email</a>
+      <a class="nav-link" href="book-confirm.html">Booking Confrimed Email</a>
+    </nav>
+    <!-- Template One -->
+    <div
+      class="body-container verify-container"
+      style="
+        margin: auto;
+        background-color: white;
+        width: 600px;
+        padding: 10px 10px;
+      "
+    >
+      <!-- Email Name -->
+      <h4 class="page-name">Verification Email</h4>
+      <!-- Email Content -->
+      <h1>Serving you your account!</h1>
+      <img
+        class="verify-img"
+        src="https://global-uploads.webflow.com/5b44edefca321a1e2d0c2aa6/60024f0fb45eff503e8fa04c_Dimensions-Sports-Volleyball-Volleyball-Serve-Jump-Men.svg"
+        style="width: 100%"
+      />
+      <p><b>Hello {first_name},</b></p>
+      <br />
+      <p>Tap the button below to verify your email address.</p>
+      <br />
+      <button
+        class="verify-btn"
+        style="
+          background-color: #053661;
+          color: white;
+          border-radius: 4px;
+          border-style: none;
+          padding: 10px 30px;
+          transition: all 0.3s;
+          margin-bottom: 50px;
+        "
+      >
+        Verify Your Email
+      </button>
+      <p>If you did not create an account, no further action is required.</p>
+      <br />
+      <p>Thanks,</p>
+      <br />
+      <p>The Javelin team</p>
+    </div>
+  </body>
+</html>
